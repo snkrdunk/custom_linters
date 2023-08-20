@@ -5,7 +5,7 @@
 package main
 
 import (
-	"github.com/toshiki-otaka/argument_checker"
+	"github.com/snkrdunk/empty_err_checker"
 	"golang.org/x/tools/go/analysis"
 )
 
@@ -23,6 +23,6 @@ type analyzerPlugin struct{}
 
 func (analyzerPlugin) GetAnalyzers() []*analysis.Analyzer {
 	return []*analysis.Analyzer{
-		argument_checker.Analyzer,
+		empty_err_checker.Analyzer,
 	}
 }

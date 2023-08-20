@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/golangci/golangci-lint v1.54.1
-	github.com/toshiki-otaka/argument_checker v0.0.0-20230817003445-1355ebfeb974
+	github.com/snkrdunk/empty_err_checker v0.0.0-20230820060823-ca5c2f92961d
 	golang.org/x/tools v0.12.0
 )
 
