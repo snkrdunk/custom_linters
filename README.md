@@ -7,7 +7,7 @@ custom_linters is a tool to run multiple linters at once using [the multichecker
 # Installation
 
 ```console
-go install github.com/snkrdunk/custom_linters@latest
+go install github.com/snkrdunk/custom_linters/cmd/custom_linters@latest
 ```
 
 # How to add analyzer
