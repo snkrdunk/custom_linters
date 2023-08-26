@@ -18,7 +18,7 @@ go install github.com/snkrdunk/custom_linters@latest
 go get github.com/path/to/module
 ```
 
-### **If you want to add a private linter module, set GOPRIVATE to the repository or account path before executing `go get` command**
+**If you want to add a private linter module, set GOPRIVATE to the repository or account path before executing `go get` command**
 ```console
 export GOPRIVATE=github.com/snkrdunk
 ```
