@@ -1,7 +1,5 @@
 # custom_linters
 
-# Features
-
 custom_linters is a tool to run multiple linters at once using [the multichecker package](https://pkg.go.dev/golang.org/x/tools/go/analysis/multichecker).
 
 # Installation
@@ -30,7 +28,7 @@ In this example, you can get private module from github.com/snkrdunk.
  package main
 
  import (
-+       "path/to/your/linter/your_linter_pkg"
++       "path/to/linter/linter_pkg"
 
         "github.com/snkrdunk/empty_err_checker"
         "golang.org/x/tools/go/analysis/multichecker"
@@ -39,7 +37,7 @@ In this example, you can get private module from github.com/snkrdunk.
  func main() {
         multichecker.Main(
                 empty_err_checker.Analyzer,
-+               your_linter_pkg.Analyzer,
++               linter_pkg.Analyzer,
         )
  }
 ```
@@ -50,7 +48,7 @@ In this example, you can get private module from github.com/snkrdunk.
  package main
 
  import (
-+       "path/to/your/linter/your_linter_pkg"
++       "path/to/linter/linter_pkg"
 
         "github.com/snkrdunk/empty_err_checker"
         "golang.org/x/tools/go/analysis"
@@ -59,7 +57,7 @@ In this example, you can get private module from github.com/snkrdunk.
  func (analyzerPlugin) GetAnalyzers() []*analysis.Analyzer {
         return []*analysis.Analyzer{
                 empty_err_checker.Analyzer,
-+               your_linter_pkg.Analyzer,
++               linter_pkg.Analyzer,
         }
  }
 ```
