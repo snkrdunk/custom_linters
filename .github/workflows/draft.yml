@@ -9,8 +9,14 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   draft:
+    permissions:
+      contents: write
+      pull-requests: write
     name: Draft
     runs-on: ubuntu-latest
     steps:
